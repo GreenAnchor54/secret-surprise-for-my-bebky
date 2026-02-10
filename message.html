@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Letter to You ❤️</title>
+    <style>
+        :root {
+            --primary-pink: #ffb7c5;
+            --heart-red: #ff4d4d;
+            --bg-color: #ffe3e3;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            color: #444;
+        }
+
+        .letter-container {
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            max-width: 600px;
+            width: 100%;
+            line-height: 1.8;
+            position: relative;
+            animation: slideUp 1s ease-out;
+        }
+
+        .heart-header {
+            background-color: var(--heart-red);
+            height: 30px;
+            width: 30px;
+            transform: rotate(-45deg);
+            margin: 0 auto 30px;
+            position: relative;
+        }
+
+        .heart-header:before, .heart-header:after {
+            content: "";
+            background-color: var(--heart-red);
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            position: absolute;
+        }
+        .heart-header:before { top: -15px; left: 0; }
+        .heart-header:after { left: 15px; top: 0; }
+
+        h1 {
+            text-align: center;
+            color: var(--heart-red);
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .love-text {
+            font-size: 1.1rem;
+            white-space: pre-line; 
+        }
+
+        .reasons-list {
+            margin-top: 30px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .reasons-list li {
+            background: #fffafa;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-left: 5px solid var(--heart-red);
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .reasons-list li:hover {
+            transform: translateX(10px);
+            background: #ffebeb;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 40px;
+            font-weight: bold;
+            color: var(--heart-red);
+            font-style: italic;
+        }
+
+        .back-link {
+            margin-top: 30px;
+            text-decoration: none;
+            color: #888;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .back-link:hover { color: var(--heart-red); }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="letter-container">
+        <div class="heart-header"></div>
+        <h1>Dear Bepky,</h1>
+        
+        <div class="love-text">
+            I wanted to take a moment to tell you how much you mean to me. Coding this little site for my gub gub is just a little thingy i want to give to you ,hopefully everything works ,i have been working on this web for a bit. 
+
+            Here i want to point out how much you mean to me and how much i love you. And wanted to say that you mean the world to me and i love and care about you so so so so much and i hope you know that.
+            i will not get too much into anythyng cuz its still a public website but i luv you bebky.<br>Here are some reasons why i love you so much:
+        </div>
+
+        <ul class="reasons-list">
+            <li>✨ You are my best friend.</li>
+            <li>✨ I love how you are always kind and gentle.</li>
+            <li>✨ Our Yap Yaps</li>
+            <li>✨ The way you always care for me</li>
+            <li>✨ Just... everything about you.</li>
+            <li>✨ Againt i won t get too personal</li>
+        </ul>
+
+        <div class="love-text">
+            I'm so lucky to have you by my GubyGuby. Happy Valentine's Day, my love. 
+        </div>
+
+        <div class="footer-note">
+            Forever and always, <br>
+            Your Gub Gub Husband❤️
+        </div>
+    </div>
+
+    <a href="index.html" class="back-link">← Back to Homepage</a>
+
+</body>
+</html>
